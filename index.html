@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01 DOM</title>
+    <style>
+        /* Importando uma fonte esportiva */
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        body {
+            background: repeating-linear-gradient(
+                90deg,
+                #000000, #ffffff 50px,
+                #ffffff 50px, #ffffff 100px
+            ); /* Listras imitando um campo de futebol */
+            font-family: 'Anton', sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: #ff0000;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            font-size: 1.8rem;
+            background-color: white;
+            color: #000000;
+            padding: 15px;
+            margin: 10px auto;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        li:hover {
+            background-color: #9a9898; /* Verde vibrante ao passar o mouse */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Esportes</h1>
+
+    <ul>
+        <li class="desc1">⚽ Futebol</li>
+        <li class="desc2">🏐 Vôlei</li>
+        <li class="desc3">🏀 Basquete</li>
+        <li class="desc4">🏊 Natação</li>
+    </ul>
+</body>
+</html>
+
+<script src = "script.js"></script>
