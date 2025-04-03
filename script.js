@@ -36,14 +36,26 @@ console.log("Exibindo com Query Selector" + tituloQS.textContent)
 
 // DescQS
 
-let liesp1QS = document.querySelector(".li");
-console.log("Exibindo com o QS o paragrafo" + liesp1QS [0].textContent)
+let liespQS = document.querySelectorAll(".desc");
+console.log("Exibindo com o QS o paragrafo" + liespQS [0].textContent)
 
-let liesp2QS = document.querySelector(".li");
-console.log("Exibindo com o QS o paragrafo" + liesp2QS [1].textContent)
+const lista = document.querySelector("ul"); 
+const novoEsporte1 = document.createElement("li");
+novoEsporte1.textContent = "🤾 HandBall";
+novoEsporte1.classList.add("esporte");
 
-let liesp3QS = document.querySelector(".li");
-console.log("Exibindo com o QS o paragrafo" + liesp3QS [2].textContent)
+const novoEsporte2 = document.createElement("li");
+novoEsporte2.textContent = "🏸 Badminton";
+novoEsporte2.classList.add("esporte");
 
-let liesp4QS = document.querySelector(".li");
-console.log("Exibindo com o QS o paragrafo" + liesp4QS [3].textContent)
+lista.appendChild(novoEsporte1);
+lista.appendChild(novoEsporte2);
+
+titulo.style.color ="Blue"
+
+
+
+
+
+
+
